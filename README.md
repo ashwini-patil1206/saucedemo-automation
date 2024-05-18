@@ -22,17 +22,18 @@ This report presents a Selenium WebDriver automation project designed to execute
         * Similar to Scenario 1, the automation script initiates a browser session and logs in using credentials associated with a performance glitch user.
 
     - 3.2. Add three Products to Cart and Checkout:
-        * Following successful login, the script proceeds to add three products to the cart and advances to the checkout process.
+        * Following successful login, the script proceeds to add three products from inventory page to the cart.
+        * It then proceeds to the cart page, verifies the presence of the added products, and initiates the checkout process.
 
     - 3.3. Add and Remove Product on Cart Page:
-        * On the cart page, an additional product is added to the cart, and then promptly removed.
-        * Verification steps validate the correct addition and removal of the product under the performance glitch user account.
+        * On the cart page, an additional product is added to the cart, and then removed.
+        * Verification steps are implemented to ensure successful addition and removal of the product under the performance glitch user account.
 
 4. Implementation Details:
     - The automation project is developed using Selenium WebDriver in conjunction with a Java programming language.
     - Test scripts are structured using a maven build tool/framework to enable modularization.
     - XPath or CSS selectors are employed to locate and interact with web elements on the application pages.
-    - Assertions and verifications are incorporated to validate expected behaviors and outcomes throughout the test scenarios.
+    - JUnit Assertions and verifications are incorporated to validate expected behaviors and outcomes throughout the test scenarios.
 
 5. Conclusion:
     - The Selenium WebDriver automation project facilitates comprehensive testing of the E2E journeys on https://www.saucedemo.com/, covering both standard and performance glitch user scenarios.
